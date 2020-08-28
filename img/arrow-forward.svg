@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10.484" viewBox="0 0 20 10.484">
+  <g id="Group_1" data-name="Group 1" transform="translate(-877.5 -738.723)">
+    <line id="line1" data-name="Линия 16" x1="18" transform="translate(878.5 743.965)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="line2" data-name="Линия 17" x2="4.535" y2="4.535" transform="translate(891.965 739.43)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="line3" data-name="Линия 18" x1="4.535" y1="4.535" transform="translate(896.5 743.965) rotate(90)" fill="none" stroke="#fff" stroke-width="2"/>
+  </g>
+</svg>

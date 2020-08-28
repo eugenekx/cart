@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="221" height="134" viewBox="0 0 221 134">
+  <g id="Сгруппировать_19" data-name="Сгруппировать 19" transform="translate(-1028 -438)">
+    <path id="Контур_25" data-name="Контур 25" d="M5,0H201a5,5,0,0,1,5,5V109a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(1028 438)" fill="#a6a7bf"/>
+    <path id="Контур_24" data-name="Контур 24" d="M0,0H206V23H0Z" transform="translate(1028 453)" fill="#7a7b8c"/>
+    <rect id="Прямоугольник_6" data-name="Прямоугольник 6" width="206" height="114" rx="5" transform="translate(1043 458)" fill="#d6d7f0"/>
+    <g id="Сгруппировать_13" data-name="Сгруппировать 13" transform="translate(3 -5)">
+      <circle id="Эллипс_5" data-name="Эллипс 5" cx="2.5" cy="2.5" r="2.5" transform="translate(1056 532)" fill="#fff"/>
+      <circle id="Эллипс_20" data-name="Эллипс 20" cx="2.5" cy="2.5" r="2.5" transform="translate(1133 532)" fill="#fff"/>
+      <circle id="Эллипс_10" data-name="Эллипс 10" cx="2.5" cy="2.5" r="2.5" transform="translate(1095 532)" fill="#fff"/>
+      <circle id="Эллипс_14" data-name="Эллипс 14" cx="2.5" cy="2.5" r="2.5" transform="translate(1171 532)" fill="#fff"/>
+      <circle id="Эллипс_6" data-name="Эллипс 6" cx="2.5" cy="2.5" r="2.5" transform="translate(1064 532)" fill="#fff"/>
+      <circle id="Эллипс_19" data-name="Эллипс 19" cx="2.5" cy="2.5" r="2.5" transform="translate(1141 532)" fill="#fff"/>
+      <circle id="Эллипс_11" data-name="Эллипс 11" cx="2.5" cy="2.5" r="2.5" transform="translate(1103 532)" fill="#fff"/>
+      <circle id="Эллипс_15" data-name="Эллипс 15" cx="2.5" cy="2.5" r="2.5" transform="translate(1179 532)" fill="#fff"/>
+      <circle id="Эллипс_7" data-name="Эллипс 7" cx="2.5" cy="2.5" r="2.5" transform="translate(1072 532)" fill="#fff"/>
+      <circle id="Эллипс_18" data-name="Эллипс 18" cx="2.5" cy="2.5" r="2.5" transform="translate(1149 532)" fill="#fff"/>
+      <circle id="Эллипс_12" data-name="Эллипс 12" cx="2.5" cy="2.5" r="2.5" transform="translate(1111 532)" fill="#fff"/>
+      <circle id="Эллипс_16" data-name="Эллипс 16" cx="2.5" cy="2.5" r="2.5" transform="translate(1187 532)" fill="#fff"/>
+      <circle id="Эллипс_8" data-name="Эллипс 8" cx="2.5" cy="2.5" r="2.5" transform="translate(1080 532)" fill="#fff"/>
+      <circle id="Эллипс_17" data-name="Эллипс 17" cx="2.5" cy="2.5" r="2.5" transform="translate(1157 532)" fill="#fff"/>
+      <circle id="Эллипс_9" data-name="Эллипс 9" cx="2.5" cy="2.5" r="2.5" transform="translate(1119 532)" fill="#fff"/>
+      <circle id="Эллипс_13" data-name="Эллипс 13" cx="2.5" cy="2.5" r="2.5" transform="translate(1195 532)" fill="#fff"/>
+    </g>
+    <circle id="Эллипс_22" data-name="Эллипс 22" cx="14" cy="14" r="14" transform="translate(1191 473)" fill="#a6a7bf"/>
+    <path id="Контур_26" data-name="Контур 26" d="M14,0A14,14,0,1,1,0,14,14,14,0,0,1,14,0Z" transform="translate(1205 473)" fill="#e8e8f7"/>
+    <rect id="Прямоугольник_7" data-name="Прямоугольник 7" width="38" height="6" transform="translate(1059 538)" fill="#a6a7bf"/>
+    <rect id="Прямоугольник_8" data-name="Прямоугольник 8" width="43" height="6" transform="translate(1101 538)" fill="#a6a7bf"/>
+    <rect id="Прямоугольник_9" data-name="Прямоугольник 9" width="19" height="6" transform="translate(1059 549)" fill="#a6a7bf"/>
+    <rect id="Прямоугольник_10" data-name="Прямоугольник 10" width="26" height="20" rx="3" transform="translate(1059 473)" fill="#fff"/>
+  </g>
+</svg>

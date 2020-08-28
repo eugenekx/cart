@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <title>Корзина</title>
+</head>
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="modal-button"><img src="img/bag.svg"></img></button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="road-container" class="road-container">
+                <div class="line"></div>
+                <div class="progress-line" id="progress-line"></div>
+                <div class="road-point" id="cart-point">1</div>
+                <div class="road-point" id="data-point">2</div>
+                <div class="road-point" id="delivery-point">3</div>
+                <div class="road-point" id="payment-point">4</div>
+
+                <div class="road-label" id="cart-label">Покупки</div>
+                <div class="road-label-finished" id="data-label">Данные</div>
+                <div class="road-label" id="delivery-label">Доставка</div>
+                <div class="road-label" id="payment-label">Оплата</div>
+            </div>
+
+            <div id="tab0" class="tabcontent">
+                <div id="cart-container"></div>
+
+                <input type="text" class="promo" placeholder="Введите промо-код" id="promo-code" onchange="onChangeDiscount(event)">
+                <span class="promo-success" id="promo-check">&check;</span>
+
+                <table>
+                    <tr>
+                        <td class="checkout-label">Сумма:</td>
+                        <td id="cart-sum">2970₽</td>
+                    </tr>
+                    <tr>
+                        <td class="checkout-label">Скидка:</td>
+                        <td id="discount">297₽</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td class="checkout-label">Итого:</td>
+                        <td class="sum-label" id="overall-price">2673₽</td>
+                    </tr>
+                </table>
+
+                <button class="button-forward" onClick="moveForward()">
+                    ДАЛЕЕ
+                    <img src="img/arrow-forward.svg" class="arrow-forward" alt="&rarr;"></img>
+                </button>
+            </div>
+
+            <div id="tab1" class="tabcontent">
+                <div class="form-container">
+                    <img src="img/docs.svg" alt="" class="illustration-docs">
+                    <label for="nameField">Имя</label><br>
+                    <input id="nameField" type="text" class="fullsize-input" placeholder="Иван"><br>
+    
+                    <label for="secondNameField">Фамилия</label><br>
+                    <input id="secondNameField" type="text" class="fullsize-input" placeholder="Иванов"><br>
+    
+                    <label for="emailField">E-Mail</label><br>
+                    <input id="emailField" type="text" class="fullsize-input" placeholder="ivanov@gmail.com"><br>
+
+                    <label for="phoneField">Телефон</label><br>
+                    <input id="phoneField" type="text" class="fullsize-input" placeholder="+7 (999) 123-45-67"><br>    
+                    
+                </div>
+
+                <button class="button-backward" onClick="moveBackward()"><object type="image/svg+xml" data="arrow-backward.svg" class="arrow-backward">&larr;</object>НАЗАД</button>
+                <button class="button-forward" onClick="moveForward()">
+                    ДАЛЕЕ
+                    <img src="img/arrow-forward.svg" class="arrow-forward" alt="&rarr;"></img>
+                </button>
+            </div>
+            <div id="tab2" class="tabcontent">
+                <div class="form-container">
+                    <img src="img/delivery.svg" alt="" class="illustration-truck">
+                    <label for="countryField">Страна</label><br>
+                    <input id="countryField" type="text" class="fullsize-input" placeholder="Российская Федерация"><br>
+    
+                    <label for="cityField">Город</label><br>
+                    <input id="cityField" type="text" class="fullsize-input" placeholder="Москва"><br>
+    
+                    <label for="addressField">Адрес</label><br>
+                    <input id="addressField" type="text" class="fullsize-input" placeholder="ул. Пушкина, д. 6, кв. 25"><br>
+
+                    <label for="indexField">Индекс</label><br>
+                    <input id="indexField" type="text" class="fullsize-input" placeholder="123456" maxlength=6><br>    
+                    
+                </div>
+
+                <button class="button-backward" onClick="moveBackward()"><object type="image/svg+xml" data="arrow-backward.svg" class="arrow-backward">&larr;</object>НАЗАД</button>
+                <button class="button-forward" onClick="moveForward()">
+                    ДАЛЕЕ
+                    <img src="img/arrow-forward.svg" class="arrow-forward" alt="&rarr;"></img>
+                </button>
+            </div>
+            <div id="tab3" class="tabcontent">
+                <div class="form-container">
+                    <img src="img/card.svg" alt="" class="illustration-card">
+                    <label for="cardNumberField">Номер карты</label><br>
+                    <input id="cardNumberField" type="text" class="fullsize-input" placeholder="0000  0000  0000  0000" maxlength=16><br>
+    
+                    <label for="cardNameField">Имя владельца</label><br>
+                    <input id="cardNameField" type="text" class="fullsize-input" placeholder="IVANOV IVAN"><br>
+                    
+                    <div class="half-input-container">
+                        <div class="half-input-container-item">
+                            <label for="expirationField">Срок действия</label><br>
+                            <input id="expirationField" type="text" class="halfsize-input" placeholder="09/20" maxlength=5><br>
+                        </div>
+    
+                        <div class="half-input-container-item">
+                            <label for="cvvField">CVV</label><br>
+                            <input id="cvvField" type="password" class="halfsize-input" placeholder="123" maxlength=3><br> 
+                        </div>
+                    </div>
+                    <div class="secure-payment">
+                        <object type="image/svg+xml" data="img/lock.svg" width="10px"></object>
+                        Защищенный платеж
+                    </div>
+                </div>
+
+                <button class="button-backward" onClick="moveBackward()"><object type="image/svg+xml" data="arrow-backward.svg" class="arrow-backward">&larr;</object>НАЗАД</button>
+                <button class="button-forward" onClick="toFinish()">ОПЛАТИТЬ</button>
+            </div>
+
+            <div id="tab4" class="tabcontent">
+                <div class="success-container">
+                    <object type="image/svg+xml" data="img/success.svg" width="150px"></object>
+                    <div class="success-thankyou">Спасибо!</div>
+                    <div class="success-secondary">Ваш заказ успешно оформлен.</div>
+                </div>
+                <button class="button-close" onClick="closeModal()">ЗАКРЫТЬ</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

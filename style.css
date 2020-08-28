@@ -1,0 +1,501 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+
+#modal-button {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size: 19px;
+    font-weight: 800;
+    float:right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+.modal-content {
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0px 70px;
+    width: 815px;
+    height: 730px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+.close {
+    position:fixed;
+    color: #aaa;
+    top: 0px;
+    right: 20px;
+    font-size: 56px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  /* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+
+.road-container {
+    width: 100%;
+    height: 170px;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.road-point {
+    top: 75px;
+    position: absolute;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    color: white;
+    vertical-align: middle;
+    line-height: 30px;
+    text-align: center;
+    border: 5px solid white;
+    font-size: 19px;
+    font-weight: 800;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.road-point-finished {
+    background: #07B700;
+    transition: all 0.5s;
+}
+
+.road-label {
+    top: 130px;
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #aaa;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.road-label-active {
+    top: 130px;
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+.road-label-finished {
+    position: absolute;
+    top: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #07B700;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.line {
+    position: absolute;
+    top: 75px;
+    z-index: 0;
+    width: 640px;
+    height: 20px;
+    border-bottom: 5px solid #aaa;
+}
+
+.progress-line {
+    position: absolute;
+    top: 75px;
+    z-index: 1;
+    width: 0px;
+    height: 20px;
+    border-bottom: 5px solid #07B700;
+    transition: all 0.5s;
+}
+
+.tabcontent {
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+  /* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+.button-forward {
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 55px;
+    width: 160px;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    font-weight: 800;
+}
+
+.button-backward {
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 55px;
+    width: 160px;
+    color: black;
+    font-size: 19px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-weight: 800;
+}
+
+.button-close {
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 55px;
+    width: 160px;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-weight: 800;
+}
+
+.arrow-forward {
+    cursor: pointer;
+    margin-left: 8px;
+    height: 12px;
+}
+
+.arrow-backward {
+    cursor: pointer;
+    margin-right: 8px;
+    height: 12px;
+}
+
+.shopping-item {
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    border-top: 1px solid #aaa;
+}
+
+.shopping-item + .shopping-item {
+    border-bottom: 1px solid #aaa;
+}
+
+.shopping-item:only-child {
+    border-bottom: 1px solid #aaa;
+}
+
+.img-container {
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90px;
+}
+
+.img-container > img {
+    margin: auto;
+}
+
+.name-container {
+    width: 275px;
+    align-self: center;
+    line-height: 90%;
+}
+
+.q-container {
+    align-self: center;
+}
+
+.price {
+    margin: auto;
+    line-height: 90px;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 19px;
+    font-weight: 500;
+    width: 70px;
+}
+
+.close-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    align-self: center;
+    font-size: 35px;
+    color: #aaa;
+    background: white;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+.name-primary {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.name-secondary {
+    font-weight: 500;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.q-button {
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.q-button .q-icon {
+    stroke: #aaa;
+}
+
+.q-button:hover .q-icon {
+    stroke: black;
+}
+
+
+.q {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.modal-content table {
+    float: right;
+    margin-top: 35px;
+    width: 220px;
+}
+
+.modal-content td {
+    text-align: right;
+    font-size: 19px;
+}
+
+.checkout-label {
+    font-size: 19px;
+    font-weight: 800;
+    width: 20%;
+}
+
+td.sum-label {
+    font-size: 30px;
+}
+
+.modal-content hr {
+    border: 1px solid #aaa;
+}
+
+.promo {
+    margin-top: 35px;
+}
+
+
+.modal-content input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 0px;
+    transition: all 0.5s;
+}
+
+.modal-content input[type="text"]:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.modal-content input[type="text"]::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.modal-content input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #aaa;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 0px;
+    transition: all 0.5s;
+}
+
+.modal-content input[type="password"]:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.modal-content input[type="password"]::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.modal-content label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fullsize-input {
+    width: 45%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.halfsize-input {
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.illustration-docs {
+    height: 300px;
+    width: 300px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -175px;
+    right: 0;
+}
+
+.illustration-truck {
+    height: 300px;
+    width: 300px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    right: 0;
+}
+
+.illustration-card {
+    height: 300px;
+    width: 300px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    right: 0;
+}
+
+.form-container {
+    position: relative;
+}
+
+.half-input-container {
+    display: table;
+}
+
+.half-input-container-item {
+    display: table-cell;
+}
+
+.secure-payment {
+    margin-top: -10px;
+    width: 45%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #07B700;
+    text-align: right;
+}
+
+.promo-success {
+    opacity: 0;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #07B700;
+    text-align: right;
+    transition: opacity 0.5s;
+}
+
+
+.success-container {
+    text-align: center; 
+    vertical-align: middle;
+    padding-top: 200px;
+}
+
+.success-thankyou {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #07B700;
+}
+
+.success-secondary {
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
