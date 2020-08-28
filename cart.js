@@ -228,8 +228,6 @@ btn.onclick = function() {
   }
 }
 
-span.onclick = closeModal();
-
 window.onclick = function() {
   if (event.target == modal) {
     closeModal();
